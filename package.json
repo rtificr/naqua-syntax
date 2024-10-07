@@ -1,0 +1,25 @@
+{
+  "name": "naqua-syntax",
+  "displayName": "Naqua Syntax",
+  "description": "A simple syntax highlighter for the Naqua programming language",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "naqua",
+      "aliases": ["Naqua", "naqua"],
+      "extensions": [".naq",".nqa",".naqua"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "naqua",
+      "scopeName": "source.naq",
+      "path": "./syntaxes/naqua.tmLanguage.json"
+    }]
+  }
+}

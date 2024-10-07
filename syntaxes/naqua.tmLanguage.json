@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Naqua",
+	"scopeName": "source.naq",
+	"fileTypes": [
+		"naq",
+		"nqa",
+		"naqua"
+	],
+	"patterns": [
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.naqua",
+					"match": "\\b(if|loop|break)\\b"
+				},
+				{
+					"name": "keyword.punctuation.naqua",
+					"match": "\\b(\\{|\\})\\b"
+				},
+				{
+					"name": "variable",
+					"match": "\\b(think|print)\\b"
+				},
+				{
+					"name": "keyword.operator.naqua",
+					"match": "[+\\-*/]"
+				},
+				{
+					"name": "keyword.variable.naqua",
+					"match": "\\b(in|out|char|thought)\\b"
+				},
+				{
+					"name": "constant.numeric.naqua",
+					"match": "\\b\\d+(\\.\\d+)?\\b"
+				  }
+			]
+		}
+	}
+}
